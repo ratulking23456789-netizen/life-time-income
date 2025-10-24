@@ -1,86 +1,166 @@
 <!DOCTYPE html>
 <html lang="bn">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>আর্থিক স্বাধীনতা - আপনার লাইফটাইম আয়ের পথ</title>
-    <link href="https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Online Income BD</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #005bea, #00c6fb);
+      color: #fff;
+    }
+
+    header {
+      text-align: center;
+      padding: 25px 15px;
+      background: rgba(255,255,255,0.1);
+      backdrop-filter: blur(5px);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+
+    header h1 {
+      font-size: 32px;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffeb3b;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 70px 20px;
+    }
+
+    .hero h2 {
+      font-size: 36px;
+      margin-bottom: 12px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      max-width: 650px;
+      margin: 0 auto 25px;
+      line-height: 1.6;
+    }
+
+    .btn {
+      background: #fff;
+      color: #007bff;
+      padding: 12px 28px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #f3f3f3;
+      transform: scale(1.05);
+    }
+
+    .features {
+      background: #fff;
+      color: #333;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .features h3 {
+      font-size: 26px;
+      margin-bottom: 30px;
+    }
+
+    .card {
+      display: inline-block;
+      width: 280px;
+      background: #f9f9f9;
+      border-radius: 10px;
+      margin: 10px;
+      padding: 20px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h4 {
+      color: #007bff;
+      margin-bottom: 10px;
+    }
+
+    footer {
+      background: rgba(0,0,0,0.2);
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      margin-top: 40px;
+    }
+  </style>
 </head>
 <body>
 
-    <header class="header">
-        <div class="container">
-            <h1 class="logo">আর্থিক স্বাধীনতা</h1>
-            <nav>
-                <ul>
-                    <li><a href="#home">হোম</a></li>
-                    <li><a href="#about">আমাদের সম্পর্কে</a></li>
-                    <li><a href="#services">পরিষেবা</a></li>
-                    <li><a href="#contact">যোগাযোগ</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+  <header>
+    <h1>💸 Online Income BD</h1>
+    <nav>
+      <a href="#">হোম</a>
+      <a href="#">ইনকাম</a>
+      <a href="#">উত্তোলন</a>
+      <a href="#">যোগাযোগ</a>
+    </nav>
+  </header>
 
-    <section id="home" class="hero">
-        <div class="container">
-            <h2>আপনার লাইফটাইম ইনকামের স্বপ্ন পূরণ করুন!</h2>
-            <p>নিরাপদ ও দীর্ঘস্থায়ী আয়ের মাধ্যমে নিজের জীবনকে নতুন দিশা দিন। আজই শুরু করুন আপনার আর্থিক যাত্রা।</p>
-            <a href="#contact" class="btn">বিনামূল্যে পরামর্শ নিন</a>
-        </div>
-    </section>
+  <section class="hero">
+    <h2>আপনার অনলাইন ইনকাম শুরু করুন আজই!</h2>
+    <p>প্রতি সপ্তাহে ও মাসে ৪ বার উত্তোলনের সুযোগ। সর্বনিম্ন উত্তোলন ৬৭০ টাকা! রেফার করে অতিরিক্ত ইনকাম করুন।</p>
+    <a class="btn" href="#">একাউন্ট খুলুন</a>
+  </section>
 
-    <section id="about" class="section about">
-        <div class="container">
-            <h2>আমরা কারা?</h2>
-            <p>আমরা বিশ্বাস করি সঠিক পরিকল্পনা এবং দিকনির্দেশনা একটি স্থিতিশীল আর্থিক জীবনের চাবিকাঠি। আমরা বছরের পর বছর ধরে মানুষকে তাদের আর্থিক লক্ষ্য অর্জনে সহায়তা করে আসছি। আমাদের বিশেষজ্ঞ দল আপনাকে সঠিক ইনভেস্টমেন্ট ও ব্যবসার ধারণা দিয়ে লাইফটাইম ইনকামের পথ তৈরি করে দেবে।</p>
-            <div class="stats">
-                <div><span>৫০০০+</span><p>সফল ক্লায়েন্ট</p></div>
-                <div><span>১০ বছর</span><p>অভিজ্ঞতা</p></div>
-                <div><span>৯৮%</span><p>সন্তুষ্টি</p></div>
-            </div>
-        </div>
-    </section>
+  <section class="features">
+    <h3>আমাদের সুবিধাসমূহ</h3>
 
-    <section id="services" class="section services">
-        <div class="container">
-            <h2>আমাদের পরিষেবা</h2>
-            <div class="service-cards">
-                <div class="card">
-                    <h3>দীর্ঘমেয়াদী ইনভেস্টমেন্ট</h3>
-                    <p>আপনার ঝুঁকি সহনশীলতা অনুযায়ী সেরা ইনভেস্টমেন্ট প্ল্যান।</p>
-                </div>
-                <div class="card">
-                    <h3>প্যাসিভ ইনকাম কৌশল</h3>
-                    <p>ঘুমিয়ে থেকেও যেন আপনার ইনকাম চালু থাকে, সেই কৌশল।</p>
-                </div>
-                <div class="card">
-                    <h3>ব্যক্তিগত আর্থিক পরিকল্পনা</h3>
-                    <p>আপনার ব্যক্তিগত প্রয়োজন অনুযায়ী কাস্টমাইজড ফিনান্সিয়াল প্ল্যান।</p>
-                </div>
-            </div>
-        </div>
-    </section>
+    <div class="card">
+      <h4>💰 Weekly Withdraw</h4>
+      <p>প্রতি সপ্তাহে টাকা তুলুন বিকাশ বা নগদে।</p>
+    </div>
 
-    <section id="contact" class="section contact">
-        <div class="container">
-            <h2>যোগাযোগ করুন</h2>
-            <p>আমাদের সাথে কথা বলতে নিচের ফর্মটি পূরণ করুন অথবা সরাসরি ফোন করুন।</p>
-            <form action="#">
-                <input type="text" placeholder="আপনার নাম" required>
-                <input type="email" placeholder="আপনার ইমেইল" required>
-                <textarea placeholder="আপনার বার্তা" required></textarea>
-                <button type="submit" class="btn">পাঠিয়ে দিন</button>
-            </form>
-        </div>
-    </section>
+    <div class="card">
+      <h4>👥 Referral Bonus</h4>
+      <p>বন্ধুকে ইনভাইট করলে বাড়তি ইনকাম পান।</p>
+    </div>
 
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; ২০২৪ আর্থিক স্বাধীনতা। সমস্ত স্বত্ব সংরক্ষিত।</p>
-        </div>
-    </footer>
+    <div class="card">
+      <h4>📈 Monthly Reward</h4>
+      <p>মাসে চারবার বোনাস ইনকাম যোগ হবে।</p>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Online Income BD | Developed by Ratul
+  </footer>
 
 </body>
 </html>
