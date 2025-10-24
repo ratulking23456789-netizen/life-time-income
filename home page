@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Online Income BD</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      background: linear-gradient(135deg, #007bff, #00c6ff);
+      color: white;
+      text-align: center;
+    }
+
+    header {
+      padding: 20px;
+      background: rgba(0, 0, 0, 0.3);
+      backdrop-filter: blur(6px);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 28px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 12px;
+      font-weight: bold;
+    }
+
+    .hero {
+      padding: 80px 20px;
+    }
+
+    .hero h2 {
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      max-width: 600px;
+      margin: 0 auto 30px;
+    }
+
+    .btn {
+      background: #fff;
+      color: #007bff;
+      padding: 12px 24px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #f3f3f3;
+    }
+
+    .section {
+      background: white;
+      color: #333;
+      padding: 50px 20px;
+    }
+
+    .section h3 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    .card {
+      background: #f9f9f9;
+      border-radius: 8px;
+      padding: 20px;
+      margin: 10px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+      display: inline-block;
+      width: 280px;
+      vertical-align: top;
+    }
+
+    .footer {
+      background: rgba(0, 0, 0, 0.3);
+      color: #fff;
+      padding: 20px;
+      font-size: 14px;
+    }
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>💸 Online Income BD</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Withdraw</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <h2>বাড়িতে বসে অনলাইন ইনকাম শুরু করুন!</h2>
+    <p>শুধু একটি একাউন্ট খুললেই আপনি প্রতি সপ্তাহে ইনকাম তুলতে পারবেন। সর্বনিম্ন উত্তোলন ৬৭০ টাকা!</p>
+    <a class="btn" href="#">একাউন্ট খুলুন</a>
+  </div>
+
+  <div class="section">
+    <h3>আমাদের ফিচারসমূহ</h3>
+    <div class="card">
+      <h4>💰 Weekly Withdraw</h4>
+      <p>প্রতি সপ্তাহে একবার টাকা তুলতে পারবেন বিকাশ/নগদে।</p>
+    </div>
+    <div class="card">
+      <h4>👥 Referral Income</h4>
+      <p>আপনার রেফার লিংকে কেউ জয়েন করলে বোনাস ইনকাম পাবেন।</p>
+    </div>
+    <div class="card">
+      <h4>📈 Monthly Bonus</h4>
+      <p>মাসে ৪ বার বোনাস ইনকাম যোগ হবে আপনার একাউন্টে।</p>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>© 2025 Online Income BD | Developed by Ratul</p>
+  </div>
+
+</body>
+</html>
