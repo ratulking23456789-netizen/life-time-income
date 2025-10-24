@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>আর্থিক স্বাধীনতা - আপনার লাইফটাইম আয়ের পথ</title>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">আর্থিক স্বাধীনতা</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">হোম</a></li>
+                    <li><a href="#about">আমাদের সম্পর্কে</a></li>
+                    <li><a href="#services">পরিষেবা</a></li>
+                    <li><a href="#contact">যোগাযোগ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <h2>আপনার লাইফটাইম ইনকামের স্বপ্ন পূরণ করুন!</h2>
+            <p>নিরাপদ ও দীর্ঘস্থায়ী আয়ের মাধ্যমে নিজের জীবনকে নতুন দিশা দিন। আজই শুরু করুন আপনার আর্থিক যাত্রা।</p>
+            <a href="#contact" class="btn">বিনামূল্যে পরামর্শ নিন</a>
+        </div>
+    </section>
+
+    <section id="about" class="section about">
+        <div class="container">
+            <h2>আমরা কারা?</h2>
+            <p>আমরা বিশ্বাস করি সঠিক পরিকল্পনা এবং দিকনির্দেশনা একটি স্থিতিশীল আর্থিক জীবনের চাবিকাঠি। আমরা বছরের পর বছর ধরে মানুষকে তাদের আর্থিক লক্ষ্য অর্জনে সহায়তা করে আসছি। আমাদের বিশেষজ্ঞ দল আপনাকে সঠিক ইনভেস্টমেন্ট ও ব্যবসার ধারণা দিয়ে লাইফটাইম ইনকামের পথ তৈরি করে দেবে।</p>
+            <div class="stats">
+                <div><span>৫০০০+</span><p>সফল ক্লায়েন্ট</p></div>
+                <div><span>১০ বছর</span><p>অভিজ্ঞতা</p></div>
+                <div><span>৯৮%</span><p>সন্তুষ্টি</p></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="section services">
+        <div class="container">
+            <h2>আমাদের পরিষেবা</h2>
+            <div class="service-cards">
+                <div class="card">
+                    <h3>দীর্ঘমেয়াদী ইনভেস্টমেন্ট</h3>
+                    <p>আপনার ঝুঁকি সহনশীলতা অনুযায়ী সেরা ইনভেস্টমেন্ট প্ল্যান।</p>
+                </div>
+                <div class="card">
+                    <h3>প্যাসিভ ইনকাম কৌশল</h3>
+                    <p>ঘুমিয়ে থেকেও যেন আপনার ইনকাম চালু থাকে, সেই কৌশল।</p>
+                </div>
+                <div class="card">
+                    <h3>ব্যক্তিগত আর্থিক পরিকল্পনা</h3>
+                    <p>আপনার ব্যক্তিগত প্রয়োজন অনুযায়ী কাস্টমাইজড ফিনান্সিয়াল প্ল্যান।</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section contact">
+        <div class="container">
+            <h2>যোগাযোগ করুন</h2>
+            <p>আমাদের সাথে কথা বলতে নিচের ফর্মটি পূরণ করুন অথবা সরাসরি ফোন করুন।</p>
+            <form action="#">
+                <input type="text" placeholder="আপনার নাম" required>
+                <input type="email" placeholder="আপনার ইমেইল" required>
+                <textarea placeholder="আপনার বার্তা" required></textarea>
+                <button type="submit" class="btn">পাঠিয়ে দিন</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; ২০২৪ আর্থিক স্বাধীনতা। সমস্ত স্বত্ব সংরক্ষিত।</p>
+        </div>
+    </footer>
+
+</body>
+</html>
