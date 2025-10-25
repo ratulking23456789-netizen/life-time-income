@@ -159,7 +159,7 @@
   </section>
 
   <footer>
-    © 2025 Online Income BD | Developed by Ratul
+     Online Income BD | Developed by Ratul
   </footer>
 
 </body>
