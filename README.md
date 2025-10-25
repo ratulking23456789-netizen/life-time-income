@@ -168,3 +168,76 @@
 
 </body>
 </html>
+<div class="field">
+          <label for="account">Account</label>
+          <input id="account" name="account" type="text" placeholder="আপনার অ্যাকাউন্ট নাম/ইমেইল" autocomplete="username">
+        </div>
+
+        <div class="field">
+          <label for="password">Password</label>
+          <div class="pw-row">
+            <input id="password" name="password" type="password" placeholder="আপনার পাসওয়ার্ড" autocomplete="current-password" style="flex:1;">
+            <button type="button" class="pw-toggle" id="togglePw" aria-pressed="false">Show</button>
+          </div>
+        </div>
+
+        <button id="submitBtn" class="btn" type="submit">Submit</button>
+
+        <p class="help">নতুন ব্যবহারকারী? — <a href="#" style="color: #e6faff; text-decoration:underline;">রেজিস্ট্রেশন</a></p>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    // small JS: basic validation + show/hide password
+    const form = document.getElementById('loginForm');
+    const account = document.getElementById('account');
+    const password = document.getElementById('password');
+    const errorBox = document.getElementById('error');
+    const submitBtn = document.getElementById('submitBtn');
+    const toggle = document.getElementById('togglePw');
+
+    toggle.addEventListener('click', () => {
+      const isHidden = password.type === 'password';
+      password.type = isHidden ? 'text' : 'password';
+      toggle.textContent = isHidden ? 'Hide' : 'Show';
+      toggle.setAttribute('aria-pressed', isHidden ? 'true' : 'false');
+    });
+
+    submitBtn.addEventListener('click', () => {
+      errorBox.style.display = 'none';
+      const a = account.value.trim();
+      const p = password.value;
+
+      if (!a || !p) {
+        errorBox.textContent = 'দয়া করে Account এবং Password দুটোই পূরণ করুন।';
+        errorBox.style.display = 'block';
+        return;
+      }
+
+      // ---- এখানে সার্ভারে পাঠানোর জায়গা ----
+      // উদাহরণ: fetch('/login', {method:'POST', body: JSON.stringify({account:a,password:p})})
+      // কিন্তু এখন শুধু ডেমো: সফল হলে নিচের মেসেজ দেখাবে
+
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Signing in...';
+
+      // ডেমো সিমুলেশন (1 সেকেন্ড)
+      setTimeout(() => {
+        submitBtn.disabled = false;
+        submitBtn.textContent = 'Submit';
+        alert('Login successful (ডেমো)। সার্ভার সাইড যাচাই করার জন্য আপনার কোড/এন্ডপয়েন্ট সংযুক্ত করুন।');
+        // form.reset(); // চাইলে আনকমেন্ট করে ফর্ম ক্লিয়ার করো
+      }, 1000);
+    });
+
+    // Enter key submission
+    form.addEventListener('keydown', (e)=> {
+      if (e.key === 'Enter') {
+        e.preventDefault();
+        submitBtn.click();
+      }
+    });
+  </script>
+</body>
+</html>
