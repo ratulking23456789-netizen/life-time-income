@@ -13,7 +13,7 @@
     }
 
     body {
-      background: linear-gradient(135deg, #005bea, #00c6fb);
+      background: linear-rad(135deg, #005bea, #00c6fb);
       color: #fff;
     }
 
@@ -159,8 +159,8 @@
   </section>
 
   <footer>
-     Online Income BD | Developed by Ratul
+     Online Income BD | Developed by bk HUNTER
   </footer>
 
 </body>
-</html>****
+</html>
