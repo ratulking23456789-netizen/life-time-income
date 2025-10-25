@@ -1,9 +1,9 @@
-<!DOCTYPE html>
+<LIFE TIME>
 <html lang="bn">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Online Income | Home</title>
+  <title>LIFETIME | Home</title>
   <style>
     body {
       margin: 0;
@@ -108,7 +108,7 @@
 <body>
 
   <header>
-    Online Income
+    WELLCOME
   </header>
 
   <nav>
@@ -163,7 +163,7 @@
   </div>
 
   <footer>
-    © 2025 Online Income | Developed by Ratul
+     LIFE TIME | Developed bY BK HUNTER
   </footer>
 
 </body>
