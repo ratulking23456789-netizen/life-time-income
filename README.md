@@ -232,12 +232,4 @@
     });
 
     // Enter key submission
-    form.addEventListener('keydown', (e)=> {
-      if (e.key === 'Enter') {
-        e.preventDefault();
-        submitBtn.click();
-      }
-    });
-  </script>
-</body>
-</html>
+    
