@@ -1,165 +1,169 @@
-<life time income>
+<!DOCTYPE html>
 <html lang="bn">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Online Income BD</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Income | Home</title>
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: "Poppins", sans-serif;
-    }
-
     body {
-    
-      color: #fff;
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #fff;
+      color: #333;
     }
-
     header {
+      background-color: #e60000;
+      color: white;
       text-align: center;
-      padding: 25px 15px;
-      background: rgba(255,255,255,0.1);
-      backdrop-filter: blur(5px);
-      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+      padding: 40px 10px;
+      font-size: 28px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 2px;
     }
-
-    header h1 {
-      font-size: 32px;
-      font-weight: 700;
-      letter-spacing: 1px;
-    }
-
     nav {
-      margin-top: 10px;
+      background-color: #b30000;
+      text-align: center;
+      padding: 10px 0;
     }
-
     nav a {
-      color: #fff;
+      color: white;
       text-decoration: none;
       margin: 0 15px;
-      font-weight: 600;
-      transition: 0.3s;
+      font-weight: 500;
+      transition: color 0.3s;
     }
-
     nav a:hover {
-      color: #ffeb3b;
+      color: #ffd700;
     }
-
     .hero {
       text-align: center;
-      padding: 70px 20px;
+      padding: 80px 20px;
+      background: linear-gradient(to right, #ff4d4d, #e60000);
+      color: white;
     }
-
-    .hero h2 {
-      font-size: 36px;
-      margin-bottom: 12px;
+    .hero h1 {
+      font-size: 48px;
+      margin-bottom: 10px;
     }
-
     .hero p {
-      font-size: 18px;
-      max-width: 650px;
-      margin: 0 auto 25px;
-      line-height: 1.6;
+      font-size: 20px;
     }
-
-    .btn {
-      background: #fff;
-      color: #007bff;
-      padding: 12px 28px;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: bold;
-      transition: 0.3s;
-    }
-
-    .btn:hover {
-      background: #f3f3f3;
-      transform: scale(1.05);
-    }
-
-    .features {
-      background: #fff;
-      color: #333;
+    .section {
       padding: 60px 20px;
       text-align: center;
     }
-
-    .features h3 {
-      font-size: 26px;
-      margin-bottom: 30px;
+    .section h2 {
+      color: #e60000;
+      margin-bottom: 20px;
+      font-size: 32px;
+    }
+    .section p {
+      max-width: 700px;
+      margin: auto;
+      font-size: 18px;
+      line-height: 1.6;
     }
 
-    .card {
-      display: inline-block;
-      width: 280px;
-      background: #f9f9f9;
+    /* সুবিধাসমূহ Section */
+    .benefits {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 25px;
+      margin-top: 40px;
+    }
+    .benefit-box {
+      background: #fff5f5;
+      border: 2px solid #e60000;
       border-radius: 10px;
-      margin: 10px;
-      padding: 20px;
-      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-      transition: 0.3s;
+      width: 280px;
+      padding: 25px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
     }
-
-    .card:hover {
-      transform: translateY(-5px);
+    .benefit-box:hover {
+      transform: scale(1.05);
     }
-
-    .card h4 {
-      color: #007bff;
+    .benefit-box h3 {
+      color: #b30000;
       margin-bottom: 10px;
+      font-size: 20px;
+    }
+    .benefit-box p {
+      font-size: 16px;
+      line-height: 1.5;
+      color: #333;
     }
 
     footer {
-      background: rgba(0,0,0,0.2);
-      color: #fff;
+      background-color: #b30000;
+      color: white;
       text-align: center;
-      padding: 20px;
-      font-size: 14px;
-      margin-top: 40px;
+      padding: 15px 0;
+      font-size: 16px;
     }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>💸 Online Income BD</h1>
-    <nav>
-      <a href="#">হোম</a>
-      <a href="#">ইনকাম</a>
-      <a href="#">উত্তোলন</a>
-      <a href="#">যোগাযোগ</a>
-    </nav>
+    Online Income
   </header>
 
-  <section class="hero">
-    <h2>আপনার অনলাইন ইনকাম শুরু করুন আজই!</h2>
-    <p>প্রতি সপ্তাহে ও মাসে ৪ বার উত্তোলনের সুযোগ। সর্বনিম্ন উত্তোলন ৬৭০ টাকা! রেফার করে অতিরিক্ত ইনকাম করুন।</p>
-    <a class="btn" href="#">একাউন্ট খুলুন</a>
-  </section>
+  <nav>
+    <a href="#">হোম</a>
+    <a href="#">আমাদের সম্পর্কে</a>
+    <a href="#">কাজ শুরু করুন</a>
+    <a href="#">যোগাযোগ</a>
+  </nav>
 
-  <section class="features">
-    <h3>আমাদের সুবিধাসমূহ</h3>
+  <div class="hero">
+    <h1>অনলাইন ইনকাম শুরু করুন আজই!</h1>
+    <p>বাসা থেকে কাজ করে প্রতিদিন ইনকাম করুন নিজের মতো করে 💻</p>
+  </div>
 
-    <div class="card">
-      <h4>💰 Weekly Withdraw</h4>
-      <p>প্রতি সপ্তাহে টাকা তুলুন বিকাশ বা নগদে।</p>
+  <div class="section">
+    <h2>আমাদের সার্ভিস</h2>
+    <p>
+      আমরা আপনাকে শেখাবো কিভাবে অনলাইনে আয় করা যায় — ফ্রিল্যান্সিং, ইউটিউব, অ্যাফিলিয়েট মার্কেটিং, 
+      ব্লগিং, ও আরও অনেক কিছু! প্রতিদিন নতুন নতুন টিপস ও সুযোগ সম্পর্কে জানতে আমাদের ওয়েবসাইট ভিজিট করুন।
+    </p>
+  </div>
+
+  <div class="section">
+    <h2>আমাদের সুবিধাসমূহ</h2>
+
+    <div class="benefits">
+      <div class="benefit-box">
+        <h3>💰 Weekly Withdraw</h3>
+        <p>প্রতি সপ্তাহে টাকা তুলুন বিকাশ বা নগদে!</p>
+      </div>
+
+      <div class="benefit-box">
+        <h3>👥 Referral Bonus</h3>
+        <p>বন্ধুকে ইনভাইট করলে বাড়তি ইনকাম পান!</p>
+      </div>
+
+      <div class="benefit-box">
+        <h3>✅ Monthly Reward</h3>
+        <p>মাসে চারবার বোনাস ইনকাম যোগ হবে!</p>
+      </div>
     </div>
+  </div>
 
-    <div class="card">
-      <h4>👥 Referral Bonus</h4>
-      <p>বন্ধুকে ইনভাইট করলে বাড়তি ইনকাম পান।</p>
-    </div>
-
-    <div class="card">
-      <h4>📈 Monthly Reward</h4>
-      <p>মাসে চারবার বোনাস ইনকাম যোগ হবে।</p>
-    </div>
-  </section>
+  <div class="section">
+    <h2>কেন আমাদের সাথে কাজ করবেন?</h2>
+    <p>
+      ✅ সহজ ট্রেনিং<br>
+      ✅ রিয়েল পেমেন্ট সিস্টেম<br>
+      ✅ ২৪/৭ সাপোর্ট<br>
+      ✅ বাংলাদেশি ইউজারদের জন্য উপযোগী সিস্টেম
+    </p>
+  </div>
 
   <footer>
-     Online Income BD | Developed by bk HUNTER
+    © 2025 Online Income | Developed by Ratul
   </footer>
 
 </body>
