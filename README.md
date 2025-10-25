@@ -168,10 +168,10 @@
 
 </body>
 </html>
-<div class="field">
+ class="field">
           <label for="account">Account</label>
           <input id="account" name="account" type="text" placeholder="আপনার অ্যাকাউন্ট নাম/ইমেইল" autocomplete="username">
-        </div>
+        
 
         <div class="field">
           <label for="password">Password</label>
