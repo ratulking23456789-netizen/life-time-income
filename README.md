@@ -168,25 +168,17 @@
 
 </body>
 </html>
- class="field">
-          <label for="account">Account</label>
-          <input id="account" name="account" type="text" placeholder="আপনার অ্যাকাউন্ট নাম/ইমেইল" autocomplete="username">
+                       <label for="account">Account</label>
+                           <input id="account" name="account" type="text" placeholder="আপনার অ্যাকাউন্ট নাম/ইমেইল" autocomplete="username">
         
 
-        <div class="field">
-          <label for="password">Password</label>
-          <div class="pw-row">
-            <input id="password" name="password" type="password" placeholder="আপনার পাসওয়ার্ড" autocomplete="current-password" style="flex:1;">
-            <button type="button" class="pw-toggle" id="togglePw" aria-pressed="false">Show</button>
-          </div>
-        </div>
+                     <div class="field">
+                     <label for="password">Password</label>
+               <div class="pw-row">
+                    <input id="password" name="password" type="password" placeholder="আপনার পাসওয়ার্ড" autocomplete="current-password" style="flex:1;">
+                    <button type="button" class="pw-toggle" id="togglePw" aria-pressed="false">Show</button>
 
         <button id="submitBtn" class="btn" type="submit">Submit</button>
-
-        <p class="help">নতুন ব্যবহারকারী? — <a href="#" style="color: #e6faff; text-decoration:underline;">রেজিস্ট্রেশন</a></p>
-      </form>
-    </div>
-  </div>
 
   <script>
     // small JS: basic validation + show/hide password
