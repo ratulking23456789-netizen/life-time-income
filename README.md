@@ -13,7 +13,7 @@
     }
 
     body {
-      background: linear-read(135deg, #005bea, #00c6fb);
+      background: linear-Read(135deg, #005bea, #00c6fb);
       color: #fff;
     }
 
