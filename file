@@ -1,0 +1,91 @@
+<div class="filename" id="fileName">কোনো ফাইল নির্বাচিত হয়নি</div>
+        <button type="button" class="toggle" id="chooseBtn">নির্বাচন</button>
+      </div>
+      <div class="helper">
+        <small class="small">অনুমোদিত: .pdf, .jpg, .png, .docx (max 10MB)।</small>
+      </div>
+    </div>
+
+    <!-- Password -->
+    <div class="field">
+      <label for="password">পাসওয়ার্ড</label>
+      <div class="row">
+        <input id="password" name="password" type="password" placeholder="আপনার পাসওয়ার্ড" required minlength="6" />
+        <button type="button" class="toggle" id="pwdToggle">দেখাও</button>
+      </div>
+      <div class="helper">
+        <small class="small">পাসওয়ার্ড কমপক্ষে ৬ অক্ষর হওয়া উচিত।</small>
+      </div>
+    </div>
+
+    <!-- Personal code -->
+    <div class="field">
+      <label for="pcode">Personal Code</label>
+      <input id="pcode" name="personal_code" type="text" placeholder="আপনার personal code লিখুন" pattern="[A-Za-z0-9\-]{3,20}" title="3-20 অক্ষর: অক্ষর, সংখ্যা বা -" required />
+      <div class="helper">
+        <small class="small">উদাহরণ: ABC-123 বা 2025X01</small>
+      </div>
+    </div>
+
+    <!-- Submit -->
+    <div class="field">
+      <button class="btn" type="submit">জমা দিন</button>
+    </div>
+
+    <div class="small">ফর্ম ডেমো — সার্ভারে জমা করতে action সেট করুন।</div>
+  </form>
+
+  <script>
+    // file chooser proxy
+    const fileInput = document.getElementById('fileInput');
+    const chooseBtn = document.getElementById('chooseBtn');
+    const fileName = document.getElementById('fileName');
+    chooseBtn.addEventListener('click', ()=> fileInput.click());
+    fileInput.addEventListener('change', ()=>{
+      if(!fileInput.files || fileInput.files.length === 0){
+        fileName.textContent = 'কোনো ফাইল নির্বাচিত হয়নি';
+        return;
+      }
+      const f = fileInput.files[0];
+      let name = f.name;
+      if(name.length > 28) name = name.slice(0,24) + '...';
+      fileName.textContent = name + ' • ' + Math.round(f.size/1024) + 'KB';
+      // simple file size limit (10MB)
+      if(f.size > 10 * 1024 * 1024){
+        alert('দুঃখিত, ফাইলটি 10MB এর বেশি। অনুগ্রহ করে ছোট ফাইল আপলোড করুন।');
+        fileInput.value = '';
+        fileName.textContent = 'কোনো ফাইল নির্বাচিত হয়নি';
+      }
+    });
+
+    // password toggle
+    const pwd = document.getElementById('password');
+    const pwdToggle = document.getElementById('pwdToggle');
+    pwdToggle.addEventListener('click', ()=>{
+      if(pwd.type === 'password'){
+        pwd.type = 'text';
+        pwdToggle.textContent = 'লুকাও';
+      } else {
+        pwd.type = 'password';
+        pwdToggle.textContent = 'দেখাও';
+      }
+    });
+
+    // simple client-side submit handler (demo)
+    const form = document.getElementById('loginForm');
+    form.addEventListener('submit', (e) => {
+      // demo: prevent actual submit since action="#"
+      if(form.getAttribute('action') === '#'){
+        e.preventDefault();
+        // tiny validation feedback
+        const pc = document.getElementById('pcode');
+        if(!pc.checkValidity()){
+          pc.reportValidity();
+          return;
+        }
+        alert('ফর্ম ভ্যালিড — সার্ভারে পাঠাতে form action এটাতে ঠিক করুন।');
+      }
+    });
+  </script>
+</body>
+</html>
