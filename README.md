@@ -6,85 +6,63 @@
 <title>Lifetime Income</title>
 <style>
   body{
-    font-family:"Noto Sans Bengali",system-ui,sans-serif;
+    font-family:"Noto Sans Bengali",sans-serif;
     background:linear-gradient(180deg,#0f172a,#1e293b);
-    color:#e2e8f0;
+    color:#f1f5f9;
     margin:0;
     padding:20px;
   }
-  .container{
+  .box{
     max-width:420px;
-    margin:0 auto;
+    margin:auto;
     background:#1e293b;
-    border-radius:12px;
+    border-radius:10px;
     padding:20px;
-    box-shadow:0 8px 20px rgba(0,0,0,0.4);
+    box-shadow:0 6px 16px rgba(0,0,0,0.4);
   }
-  h1,h2,h3{text-align:center;margin:8px 0}
-  h1{color:#ff4757;font-size:26px}
-  h2{color:#7c5cff;font-size:18px}
+  h1{text-align:center;color:#ff4757;font-size:26px;margin:5px 0}
+  h2{text-align:center;color:#7c5cff;font-size:18px;margin:5px 0 15px}
   label{display:block;margin-top:10px;font-size:14px}
   input,select{
-    width:100%;
-    padding:9px 10px;
-    border:none;
-    border-radius:8px;
-    margin-top:5px;
-    background:#334155;
-    color:#fff;
-    font-size:14px;
-    outline:none;
+    width:100%;padding:9px;border:none;border-radius:8px;
+    margin-top:5px;background:#334155;color:#fff;outline:none;
   }
   button{
-    width:100%;
-    margin-top:12px;
-    padding:10px;
+    width:100%;margin-top:12px;padding:10px;
     background:linear-gradient(90deg,#ff6b6b,#7c5cff);
-    color:#fff;
-    border:none;
-    border-radius:8px;
-    font-weight:600;
-    cursor:pointer;
+    color:#fff;border:none;border-radius:8px;font-weight:600;cursor:pointer;
   }
-  ul{padding-left:16px;margin:8px 0}
-  ul li{margin-bottom:6px;font-size:14px}
+  ul{padding-left:18px}
+  ul li{margin-bottom:5px;font-size:14px}
   .section{
-    background:#27364f;
-    padding:12px;
-    border-radius:10px;
-    margin-top:16px;
+    background:#27364f;padding:12px;border-radius:10px;margin-top:16px;
   }
-  p{font-size:13px;line-height:1.5;text-align:center;color:#cbd5e1}
-  .contact-btn{
-    display:block;
-    text-align:center;
-    background:linear-gradient(90deg,#22c55e,#3b82f6);
-    color:white;
-    text-decoration:none;
-    padding:10px;
-    border-radius:8px;
-    font-weight:600;
-    margin-top:12px;
+  p{text-align:center;font-size:13px;line-height:1.5;color:#cbd5e1}
+  a.contact{
+    display:block;text-align:center;background:linear-gradient(90deg,#22c55e,#3b82f6);
+    color:white;text-decoration:none;padding:10px;border-radius:8px;
+    font-weight:600;margin-top:10px;
   }
-  .contact-btn:hover{opacity:0.9}
+  .payment-info{
+    background:#172554;padding:10px;border-radius:10px;margin-top:10px;
+    font-size:13px;line-height:1.6;
+  }
 </style>
 </head>
 <body>
 
-<div class="container">
+<div class="box">
   <h1>Lifetime Income</h1>
   <h2>সাগতম জানাই আপনাকে</h2>
 
-  <!-- Login -->
   <div class="section">
     <label>Account</label>
-    <input type="text" placeholder="আপনার একাউন্ট নাম দিন" required>
+    <input type="text" placeholder="আপনার একাউন্ট নাম দিন">
     <label>Password</label>
-    <input type="password" placeholder="পাসওয়ার্ড দিন" required>
+    <input type="password" placeholder="পাসওয়ার্ড দিন">
     <button>Login</button>
   </div>
 
-  <!-- কাজ হচ্ছে -->
   <div class="section">
     <h3>আমাদের কাজ</h3>
     <ul>
@@ -93,14 +71,9 @@
       <li>Gmail Account Creating</li>
       <li>Refer System</li>
       <li>Daily Task (Like, Follow, Subscribe)</li>
-      <li>Photo Editing</li>
-      <li>Video Editing</li>
-      <li>Graphic Design</li>
-      <li>Product Sale</li>
     </ul>
   </div>
 
-  <!-- Payment -->
   <div class="section">
     <h3>Payment System</h3>
     <ul>
@@ -111,18 +84,16 @@
     </ul>
   </div>
 
-  <!-- Account Info -->
   <div class="section">
     <h3>আপনার Account তথ্য</h3>
     <label>Account নাম্বার</label>
-    <input type="text" placeholder="01XXXXXXXXX" required>
+    <input type="text" placeholder="01XXXXXXXXX">
     <label>Amount</label>
-    <input type="number" placeholder="৳ 670" required>
+    <input type="number" placeholder="৳ 670">
     <label>Personal Code</label>
-    <input type="text" placeholder="ABC-123" required>
+    <input type="text" placeholder="ABC-123">
     <label>Payment Method</label>
-    <select required>
-      <option value="">-- নির্বাচন করুন --</option>
+    <select>
       <option>বিকাশ</option>
       <option>নগদ</option>
       <option>রকেট</option>
@@ -130,18 +101,9 @@
     <button>Submit</button>
   </div>
 
-  <!-- About -->
   <div class="section">
     <h3>About</h3>
     <p>
-  
-    </p>
-    <a href="https://@Online079" target="_blank" class="contact-btn">📞 Contact Admin</a>
-  </div>
-
-  <p style="margin-top:10px;font-size:12px;">© Lifetime Income</p>
-
-</html
      ✅ 'Wellcome Online BD' প্ল্যাটফর্মের সুবিধা ও লাভজনক দিক
 আপনার দেওয়া ছবিটি থেকে বোঝা যাচ্ছে যে, এই প্ল্যাটফর্মটি মূলত ক্ষুদ্র বিনিয়োগে অনলাইনে আয় করার সুযোগ তৈরি করেছে। এর মূল সুবিধা ও লাভজনক দিকগুলো নিম্নরূপ:
 ১. 💰 স্বল্প বিনিয়োগে আয়ের সুযোগ (Low Investment, High Potential)
@@ -164,7 +126,19 @@
 • সময়ের সাথে সামঞ্জস্যপূর্ণ: প্ল্যাটফর্মটি বর্তমান সময়ের অনলাইন আয়ের প্রবণতা (যেমন: ক্লিক, শেয়ার বা ভিউয়ের মাধ্যমে উপার্জন) অনুযায়ী তৈরি করা হয়েছে, তাই এটি দ্রুত জনপ্রিয়তা পাবে।
 🔥 মূলকথা: একটি লাভজনক উদ্যোগ
 সংক্ষেপে, 'Wellcome Online BD' প্ল্যাটফর্মটি একটি স্বল্প মূলধনের, উচ্চ প্রসারের মডেল। এটি মূলত নেটওয়ার্কিং (Referral) এবং ডিজিটাল বিজ্ঞাপনের রাজস্বের ওপর ভিত্তি করে তৈরি করা হয়েছে, যা দ্রুত মুনাফা অর্জন করতে সাহায্য করবে। অল্প টাকা দিয়ে আয়ের স্বপ্ন দেখিয়ে অসংখ্য মানুষকে যুক্ত করার ক্ষমতা এটিকে অত্যন্ত লাভজনক করে তোলার সম্ভাবনা রাখে।
+    </p>
+    <a href="https://t.me/Online079" target="_blank" class="contact">📞 Contact Admin @Online079</a>
 
-  <p style="margin-top:10px;font-size:12px;"> Lifetime Income</p>
+    <div class="payment-info">
+      <strong>Account তৈরি ফি:</strong> ২০০ টাকা<br>
+      💳 <b>Nagad Personal:</b> 01909850916<br>
+      💳 <b>Bikash Personal:</b> 01630148084<br><br>
+      Send Money করে Screenshot এডমিনের কাছে জমা দিন।
+    </div>
+  </div>
 
+  <p style="margin-top:10px;font-size:12px;">© 2025 Lifetime Income</p>
+</div>
+
+</body>
 </html>
