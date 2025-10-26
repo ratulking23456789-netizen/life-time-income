@@ -157,15 +157,10 @@
     <p>
       ✅ সহজ ট্রেনিং<br>
       ✅ রিয়েল পেমেন্ট সিস্টেম<br>
-      ✅ ২৪/৭ সাপোর্ট<br>
+      ✅ ২৪ সাপোর্ট<br>
       ✅ বাংলাদেশি ইউজারদের জন্য উপযোগী সিস্টেম
 
     
-    </p>
-  </div>
-
-  <footer>
-     LIFE TIME | Developed bY BK HUNTER
   </footer>
 
 </body>
@@ -227,3 +222,9 @@
 
     // Enter key submission
     
+
+    </p>
+  </div>
+
+  <footer>
+     LIFE TIME | Developed bY BK HUNTER
