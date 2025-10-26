@@ -234,7 +234,7 @@
     <input id="account" name="account" type="text" placeholder="01XXXXXXXXX" required>
 
     <label for="amount">Amount (টাকা)</label>
-    <input id="amount" name="amount" type="number" min="1" placeholder=" উদাহরণ: 670" required>
+    <input id="amount" name="amount" type="number"
 
     <label>Payment System</label>
     <div class="radios" role="radiogroup" aria-label="Payment System">
@@ -247,9 +247,6 @@
     <input id="pcode" name="personal_code" type="text" placeholder="ABC-123" required>
 
     <button type="submit">Submit</button>
-    <small>ডেমো: বাস্তবে সাবমিট করতে form action সেট করুন।</small>
-  </form>
-
   <script>
     function submitDemo(){
       const acc = document.getElementById('account').value.trim();
