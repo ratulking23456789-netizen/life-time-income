@@ -207,3 +207,66 @@
   </div>
 
   <footer>
+<!doctype html>
+<html lang="bn">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>পেমেন্ট ফরম (বিকাশ/নগদ/রকেট)</title>
+  <style>
+    body{font-family:"Noto Sans Bengali",system-ui,sans-serif;background:#f3f6fb;display:flex;align-items:center;justify-content:center;height:100vh;margin:0}
+    .box{background:#fff;padding:16px;border-radius:10px;box-shadow:0 6px 20px rgba(20,30,60,0.08);width:340px}
+    h3{margin:0 0 10px;color:#0b2545;font-size:18px;text-align:center}
+    label{font-size:13px;color:#334155;margin-top:8px;display:block}
+    input, select{width:100%;padding:9px 10px;margin-top:6px;border:1px solid #e6eef8;border-radius:8px;font-size:14px}
+    .radios{display:flex;gap:8px;margin-top:8px}
+    .radio-item{flex:1;background:linear-gradient(180deg,#fbfdff,#f6f9ff);padding:8px;border-radius:8px;text-align:center;border:1px solid #e6eef8}
+    .radio-item input{margin-right:6px}
+    button{width:100%;margin-top:12px;padding:10px;border:0;background:linear-gradient(90deg,#ff6b6b,#7c5cff);color:#fff;border-radius:8px;font-weight:600;cursor:pointer}
+    small{display:block;text-align:center;color:#7b8794;margin-top:8px;font-size:12px}
+  </style>
+</head>
+<body>
+  <form class="box" action="#" method="post" onsubmit="event.preventDefault(); submitDemo();">
+    <h3>পেমেন্ট তথ্য</h3>
+
+    <label for="account">আপনার Account নাম্বার</label>
+    <input id="account" name="account" type="text" placeholder="01XXXXXXXXX" required>
+
+    <label for="amount">Amount (টাকা)</label>
+    <input id="amount" name="amount" type="number" min="1" placeholder=" উদাহরণ: 670" required>
+
+    <label>Payment System</label>
+    <div class="radios" role="radiogroup" aria-label="Payment System">
+      <label class="radio-item"><input type="radio" name="method" value="bKash" required>বিকাশ</label>
+      <label class="radio-item"><input type="radio" name="method" value="Nagad">নগদ</label>
+      <label class="radio-item"><input type="radio" name="method" value="Rocket">রকেট</label>
+    </div>
+
+    <label for="pcode">Personal Code</label>
+    <input id="pcode" name="personal_code" type="text" placeholder="ABC-123" required>
+
+    <button type="submit">Submit</button>
+    <small>ডেমো: বাস্তবে সাবমিট করতে form action সেট করুন।</small>
+  </form>
+
+  <script>
+    function submitDemo(){
+      const acc = document.getElementById('account').value.trim();
+      const amt = document.getElementById('amount').value;
+      const pcode = document.getElementById('pcode').value.trim();
+      const method = document.querySelector('input[name="method"]:checked');
+      if(!method){
+        alert('পেমেন্ট সিস্টেম নির্বাচন করুন (বিকাশ/নগদ/রকেট)।');
+        return;
+      }
+      if(!acc⠵⠵⠟⠟⠵⠺⠵⠺!pcode){
+        alert('সব তথ্য পূরণ করুন।');
+        return;
+      }
+      alert('সাবমিট সফল (ডেমো)।\n\nAccount: ' + acc + '\nAmount: ' + amt + '\nMethod: ' + method.value + '\nPersonal Code: ' + pcode);
+      // বাস্তবে: এখানে form.submit() বা AJAX দিয়ে সার্ভারে পাঠাবে
+    }
+  </script>
+</body>
+</html>
