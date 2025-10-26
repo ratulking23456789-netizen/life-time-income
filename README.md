@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 <html lang="bn">
 <head>
 <meta charset="UTF-8">
@@ -55,6 +55,18 @@
     margin-top:16px;
   }
   p{font-size:13px;line-height:1.5;text-align:center;color:#cbd5e1}
+  .contact-btn{
+    display:block;
+    text-align:center;
+    background:linear-gradient(90deg,#22c55e,#3b82f6);
+    color:white;
+    text-decoration:none;
+    padding:10px;
+    border-radius:8px;
+    font-weight:600;
+    margin-top:12px;
+  }
+  .contact-btn:hover{opacity:0.9}
 </style>
 </head>
 <body>
@@ -79,8 +91,12 @@
       <li>Telegram Account Creating</li>
       <li>WhatsApp Account Creating</li>
       <li>Gmail Account Creating</li>
-      <li>Refer</li>
+      <li>Refer System</li>
       <li>Daily Task (Like, Follow, Subscribe)</li>
+      <li>Photo Editing</li>
+      <li>Video Editing</li>
+      <li>Graphic Design</li>
+      <li>Product Sale</li>
     </ul>
   </div>
 
@@ -97,7 +113,7 @@
 
   <!-- Account Info -->
   <div class="section">
-  
+    <h3>আপনার Account তথ্য</h3>
     <label>Account নাম্বার</label>
     <input type="text" placeholder="01XXXXXXXXX" required>
     <label>Amount</label>
@@ -118,6 +134,16 @@
   <div class="section">
     <h3>About</h3>
     <p>
+  
+    </p>
+    <a href="https://t.me/YourAdminLink" target="_blank" class="contact-btn">📞 Contact Admin</a>
+  </div>
+
+  <p style="margin-top:10px;font-size:12px;">© 2025 Lifetime Income</p>
+</div>
+
+</body>
+</html
      ✅ 'Wellcome Online BD' প্ল্যাটফর্মের সুবিধা ও লাভজনক দিক
 আপনার দেওয়া ছবিটি থেকে বোঝা যাচ্ছে যে, এই প্ল্যাটফর্মটি মূলত ক্ষুদ্র বিনিয়োগে অনলাইনে আয় করার সুযোগ তৈরি করেছে। এর মূল সুবিধা ও লাভজনক দিকগুলো নিম্নরূপ:
 ১. 💰 স্বল্প বিনিয়োগে আয়ের সুযোগ (Low Investment, High Potential)
