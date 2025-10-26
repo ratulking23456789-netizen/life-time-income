@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html lang="bn">
 <head>
 <meta charset="UTF-8">
@@ -97,7 +97,7 @@
 
   <!-- Account Info -->
   <div class="section">
-    <h3>আপনার Account তথ্য</h3>
+  
     <label>Account নাম্বার</label>
     <input type="text" placeholder="01XXXXXXXXX" required>
     <label>Amount</label>
