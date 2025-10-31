@@ -7,93 +7,141 @@
   <style>
     body {
       background: #0a0a1f;
-      color: white;
+      color: #fff;
       font-family: "Poppins", sans-serif;
+      margin: 0;
+      padding: 0;
       text-align: center;
     }
 
-    .work-box {
+    h1 {
+      background: linear-gradient(to right, #0044ff, #7b2fff);
+      padding: 15px;
+      border-radius: 8px;
+      display: inline-block;
+      margin-top: 40px;
+      font-size: 22px;
+    }
+
+    .accordion {
+      width: 90%;
+      max-width: 800px;
+      margin: 30px auto;
       background: #101031;
       border-radius: 10px;
-      width: 85%;
-      max-width: 400px;
-      margin: 80px auto 30px;
-      padding: 20px;
       box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+      overflow: hidden;
     }
 
-    .work-title {
-      background: #0044ff;
-      color: white;
-      padding: 10px;
-      border-radius: 6px;
-      font-size: 18px;
+    .accordion-item {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .accordion-header {
+      background: #1a1a3d;
+      padding: 15px;
       cursor: pointer;
+      text-align: left;
+      font-size: 18px;
       transition: 0.3s;
     }
 
-    .work-title:hover {
-      background: #0033cc;
+    .accordion-header:hover {
+      background: #23235a;
     }
 
-    .work-list {
+    .accordion-content {
       display: none;
-      margin-top: 15px;
+      padding: 15px;
       text-align: left;
       line-height: 1.8;
-      font-size: 16px;
-      padding-left: 20px;
+      font-size: 15px;
+      color: #ddd;
+      background: #151540;
     }
 
-    .work-list li {
-      list-style: square;
-    }
-
-    .about-btn {
-      background: linear-gradient(to right, #ff4b2b, #7b2fff);
-      color: white;
-      padding: 10px 25px;
-      border: none;
-      border-radius: 6px;
-      cursor: pointer;
-      font-size: 16px;
-      font-weight: bold;
-      transition: 0.3s;
+    .accordion-content a {
+      color: #00e6ff;
       text-decoration: none;
-      display: inline-block;
+      font-weight: bold;
     }
 
-    .about-btn:hover {
-      opacity: 0.85;
+    .payment-info {
+      background: rgba(255, 255, 255, 0.05);
+      border-left: 4px solid #00ccff;
+      padding: 10px 15px;
+      border-radius: 6px;
+      margin-top: 10px;
+      line-height: 1.6;
+    }
+
+    footer {
+      margin-top: 40px;
+      font-size: 12px;
+      color: #aaa;
     }
   </style>
 </head>
 <body>
 
-  <div class="work-box">
-    <div class="work-title" onclick="toggleWork()">আমাদের কাজ</div>
-    <ul class="work-list" id="workList">
-      <li>Telegram Account Creating</li>
-      <li>WhatsApp Account Creating</li>
-      <li>Gmail Account Creating</li>
-      <li>Daily Task (Like, Follow, Subscribe)</li>
-      <li>Refer System</li>
-    </ul>
-  </div>
+  <h1>আমাদের কাজ</h1>
 
-  <!-- নিচে About বাটন -->
-  <a href="about.html" class="about-btn">ℹ️ About</a>
+  <div class="accordion">
 
-  <script>
-    function toggleWork() {
-      var list = document.getElementById("workList");
-      if (list.style.display === "none" || list.style.display === "") {
-        list.style.display = "block";
-      } else {
-        list.style.display = "none";
-      }
-    }
-  </script>
+    <!-- About Section -->
+    <div class="accordion-item">
+      <div class="accordion-header" onclick="toggleAccordion(this)">📘 About</div>
+      <div class="accordion-content">
+        ✅ <strong>'Wellcome Online BD'</strong> প্ল্যাটফর্মের সুবিধা ও লাভজনক দিক  
+        এই প্ল্যাটফর্মটি ক্ষুদ্র বিনিয়োগে অনলাইনে আয়ের সুযোগ তৈরি করেছে।  
+        এর সুবিধা ও লাভজনক দিকগুলো হলো 👇  
 
-</body>
-</html>
+        💰 <b>স্বল্প বিনিয়োগে আয়:</b> মাত্র ২০০ টাকায় শুরু, সহজ আয়ের পথ।  
+        ⏰ <b>কাজের স্বাধীনতা:</b> সময় ও স্থানের সীমাবদ্ধতা নেই।  
+        🚀 <b>লাভজনক মডেল:</b> রেফার ও বিজ্ঞাপন আয়।  
+        🌐 <b>আধুনিক প্রযুক্তি:</b> WhatsApp ও Telegram দিয়ে সহজ কাজ।  
+
+        🔥 <b>মূলকথা:</b>  
+        এটি স্বল্প মূলধনের, উচ্চ প্রসারের অনলাইন আয়ের মডেল।
+
+        <br><br>
+        <a href="https://t.me/Online079" target="_blank">📞 Contact Admin @Online079</a>
+
+        <div class="payment-info">
+          💳 <b>Account তৈরি ফি:</b> ২০০ টাকা<br>
+          💰 <b>Nagad Personal:</b> 01909850916<br>
+          💰 <b>Bikash Personal:</b> 01630148084<br>
+          Send Money করে Screenshot এডমিনের কাছে দিন।
+        </div>
+      </div>
+    </div>
+
+    <!-- Telegram Account -->
+    <div class="accordion-item">
+      <div class="accordion-header" onclick="toggleAccordion(this)">💬 Telegram Account Creating</div>
+      <div class="accordion-content">
+        Telegram অ্যাকাউন্ট তৈরি করে Verified ID ব্যবহার করতে হবে।  
+        প্রতিদিন নির্দিষ্ট সংখ্যক টাস্ক পাবে, সম্পন্ন করলে ইনকাম যুক্ত হবে।  
+        কাজ শেষে স্ক্রিনশট এডমিনকে পাঠাতে হবে।
+      </div>
+    </div>
+
+    <!-- WhatsApp Account -->
+    <div class="accordion-item">
+      <div class="accordion-header" onclick="toggleAccordion(this)">📱 WhatsApp Account Creating</div>
+      <div class="accordion-content">
+        WhatsApp অ্যাকাউন্ট তৈরি করে নির্দিষ্ট নম্বরের মাধ্যমে Verify করতে হবে।  
+        কাজের মধ্যে থাকবে মেসেজ, গ্রুপ জয়েন ও রেফার টাস্ক।
+      </div>
+    </div>
+
+    <!-- Gmail Account -->
+    <div class="accordion-item">
+      <div class="accordion-header" onclick="toggleAccordion(this)">📧 Gmail Account Creating</div>
+      <div class="accordion-content">
+        Gmail আইডি তৈরি করে কাজ সম্পন্ন করতে হবে।  
+        প্রতিটি আইডি নির্দিষ্ট নিরাপত্তা শর্তে জমা দিতে হবে, এরপর পেমেন্ট রিলিজ হবে।
+      </div>
+    </div>
+
+    <!-- Daily Task -->
