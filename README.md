@@ -1,69 +1,97 @@
 <!DOCTYPE html>
-<html>
+<html lang="bn">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Online BD</title>
-
+    <title>Online BD - Trusted Earning Platform</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Segoe UI;
-        }
-
+        /* Premium Background & Animations */
         body {
-            background: linear-gradient(-45deg, #000428, #004e92, #0f2027, #2c5364);
-            background-size: 400% 400%;
-            animation: bg 12s infinite alternate;
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: radial-gradient(circle at center, #1a1a2e 0%, #0f0f1a 100%);
             color: white;
             min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            overflow-x: hidden;
         }
 
-        @keyframes bg {
-            0% {
-                background-position: 0% 50%;
-            }
+        /* 4K Lighting Animation */
+        body::before {
+            content: "";
+            position: fixed;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: conic-gradient(from 0deg, transparent, #00d4ff, transparent 30%);
+            animation: rotate 10s linear infinite;
+            z-index: -1;
+            opacity: 0.1;
+        }
 
+        @keyframes rotate {
             100% {
-                background-position: 100% 50%;
+                transform: rotate(360deg);
             }
         }
 
+        /* Navbar Design */
         nav {
+            width: 100%;
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(15px);
+            padding: 20px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
             display: flex;
             justify-content: center;
             gap: 15px;
-            padding: 20px;
-            background: rgba(255, 255, 255, 0.05);
-            backdrop-filter: blur(15px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
         }
 
         nav button {
-            padding: 10px 18px;
-            border: none;
-            border-radius: 25px;
             background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(0, 212, 255, 0.5);
             color: white;
+            padding: 10px 20px;
             cursor: pointer;
-            transition: 0.4s;
+            border-radius: 8px;
+            transition: 0.3s;
+            font-weight: bold;
+            text-transform: uppercase;
         }
 
         nav button:hover {
-            background: #00f2fe;
-            transform: scale(1.1);
+            background: #00d4ff;
+            box-shadow: 0 0 20px #00d4ff;
+            color: #000;
         }
 
-        .section {
-            display: none;
-            padding: 40px;
+        /* Content Area */
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 30px;
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
             text-align: center;
-            animation: fade 0.6s ease;
+            display: none;
+            /* Hidden by default */
+            animation: fadeIn 0.8s ease-out;
         }
 
-        @keyframes fade {
+        .active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
             from {
                 opacity: 0;
                 transform: translateY(20px);
@@ -75,38 +103,41 @@
             }
         }
 
-        .active {
-            display: block;
+        h1 {
+            color: #00d4ff;
+            text-shadow: 0 0 10px #00d4ff;
         }
 
-        .card {
-            background: rgba(255, 255, 255, 0.08);
-            padding: 30px;
-            border-radius: 20px;
-            max-width: 900px;
-            margin: auto;
-            backdrop-filter: blur(20px);
-        }
-
-        input {
-            padding: 10px;
-            margin: 10px;
+        .list-item {
+            background: rgba(255, 255, 255, 0.05);
+            margin: 10px 0;
+            padding: 15px;
             border-radius: 10px;
-            border: none;
+            border-left: 5px solid #00d4ff;
+            text-align: left;
         }
 
-        .btn {
-            padding: 8px 18px;
+        /* Login Form */
+        input {
+            width: 80%;
+            padding: 12px;
+            margin: 10px 0;
+            border-radius: 5px;
             border: none;
-            border-radius: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            outline: none;
+        }
+
+        .login-btn {
+            background: linear-gradient(45deg, #00d4ff, #0056b3);
+            width: 85%;
+            border: none;
+            padding: 12px;
+            color: white;
+            font-weight: bold;
+            border-radius: 5px;
             cursor: pointer;
-            background: #00f2fe;
-            color: black;
-            margin: 5px;
-        }
-
-        .hidden {
-            display: none;
         }
     </style>
 </head>
@@ -114,144 +145,83 @@
 <body>
 
     <nav>
-        <button onclick="show('home')">হোম</button>
-        <button onclick="show('work')">কাজ</button>
-        <button onclick="show('admin')">এডমিন কনটাক্ট</button>
-        <button onclick="showPayment()">পেমেন্ট</button>
-        <button onclick="show('login')">Login</button>
-    </nav>
-
-    <!-- HOME -->
-    <div id="home" class="section active">
-        <div class="card">
-            <h2>Online BD</h2>
-            <p>
-                Online BD একটি বিশ্বস্ত অনলাইন আয়ের প্ল্যাটফর্ম, যেখানে আপনি ঘরে বসে বিভিন্ন সহজ কাজ করে উপার্জন করতে
-                পারবেন।
-            </p>
+        <button onclick="showPage('home')">হোম</button>
+        <button onclick="showPage('work')">কাজ</button>
+        <button onclick="showPage('admin')">এডমিন</button>
+        <button onclick="showPage('payment')">পেমেন্ট</button>
+        <button onclick="showPage('login')">Login</button>
+    </nav> 
+    <div id="home" class="container active">
+        <h1>Online BD</h1>
+        <p>Online BD একটি বিশ্বস্ত অনলাইন আয়ের প্ল্যাটফর্ম, যেখানে আপনি ঘরে বসে বিভিন্ন সহজ কাজ করে উপার্জন করতে পারবেন।
+        </p>
+        <p>আমাদের মূল লক্ষ্য হলো তরুণ প্রজন্মকে অনলাইন জগতে দক্ষ করে তোলা এবং তাদের আর্থিকভাবে স্বাবলম্বী করে তোলা।</p>
+        <div class="list-item">💰 <b>রেফার ইনকাম:</b> লিংক শেয়ার করে প্রতিটি রেফারে আয় করুন।</div>
+        <div class="list-item">🎥 <b>ভিডিও দেখে আয়:</b> ভিডিও দেখে পয়েন্ট বা টাকা উপার্জন করুন।</div>
+        <div class="list-item">✉️ <b>জিমেল মার্কেটিং:</b> ইমেইল মার্কেটিংয়ের মাধ্যমে ইনকামের সুযোগ।</div>
+        <div class="list-item">💬 <b>Telegram কাজ:</b> টেলিগ্রাম অ্যাকাউন্ট খুলে আয় করুন।</div>
+        <div class="list-item">📱 <b>WhatsApp কাজ:</b> হোয়াটসঅ্যাপ অ্যাকাউন্ট তৈরি করে আয়।</div>
+        <div class="list-item">⌨️ <b>Typing Job:</b> নতুনদের জন্য একদম পারফেক্ট কাজ।</div>
+    </div>
+    
+    <div id="work" class="container">
+        <h1>আমাদের কাজসমূহ</h1>
+        <div class="list-item">✅ ভিডিও দেখে আয়</div>
+        <div class="list-item">✅ জিমেইল মার্কেটিং</div>
+        <div class="list-item">✅ টেলিগ্রাম কাজ</div>
+        <div class="list-item">✅ হোয়াটসঅ্যাপ অ্যাকাউন্ট কাজ</div>
+    </div>
+    
+    <div id="admin" class="container">
+        <h1>এডমিন কন্টাক্ট</h1>
+        <div class="list-item" style="text-align: center;">
+            <p>টেলিগ্রাম আইডি: <b>@mhlahab11</b></p>
+            <p>একাউন্ট করার জন্য আপনাকে সরাসরি এডমিনের সাথে কন্টাক করতে হবে।</p>
+            <a href="https://t.me/mhlahab11" style="color: #00d4ff; text-decoration: none;">[ মেসেজ দিন ]</a>
         </div>
     </div>
-
-    <!-- WORK -->
-    <div id="work" class="section">
-        <div class="card">
-            <h2>কাজসমূহ</h2>
-            <p>🎥 ভিডিও দেখে আয়</p>
-            <p>✉️ জিমেইল মার্কেটিং</p>
-            <p>💬 Telegram কাজ</p>
-            <p>📱 WhatsApp কাজ</p>
-        </div>
+    
+    <div id="payment" class="container">
+        <h1>পেমেন্ট মেথড</h1>
+        <p>বিকাশ, নগদ এবং রকেটের মাধ্যমে দ্রুত পেমেন্ট দেওয়া হয়।</p>
     </div>
-
-    <!-- ADMIN -->
-    <div id="admin" class="section">
-        <div class="card">
-            <h2>এডমিন কন্টাক্ট</h2>
-            <p>
-                একাউন্ট সংক্রান্ত যেকোনো বিষয়ে যোগাযোগ করুন:
-            </p>
-            <p>Telegram: <b>@mhlahab11</b></p>
-        </div>
+    
+    <div id="login" class="container">
+        <h1>Login Area</h1>
+        <input type="text" id="username" placeholder="ইউজার নেম">
+        <input type="password" id="password" placeholder="পাসওয়ার্ড">
+        <input type="text" id="security" placeholder="সিকিউরিটি কোড">
+        <br>
+        <button class="login-btn" onclick="checkLogin()">LOGIN</button>
+        <p id="msg" style="color: red; margin-top: 10px;"></p>
     </div>
-
-    <!-- LOGIN -->
-    <div id="login" class="section">
-        <div class="card">
-            <h2>Login</h2>
-            <input type="text" id="user" placeholder="Username"><br>
-            <input type="password" id="pass" placeholder="Password"><br>
-            <input type="text" id="code" placeholder="Security Code"><br>
-            <button class="btn" onclick="login()">Login</button>
-            <p id="msg"></p>
-        </div>
-    </div>
-
-    <!-- DASHBOARD -->
-    <div id="dashboard" class="section">
-        <div class="card">
-            <h2>👤 Profile Dashboard</h2>
-            <p>Welcome lahab49</p>
-
-            <button class="btn" onclick="showGmail()">Gmail</button>
-            <button class="btn" onclick="showTelegram()">Telegram</button>
-            <button class="btn" onclick="showWhatsApp()">WhatsApp</button>
-
-            <div id="demoArea"></div>
-
-            <button class="btn" onclick="logout()">Logout</button>
-        </div>
-    </div>
-
-    <!-- PAYMENT -->
-    <div id="payment" class="section">
-        <div class="card">
-            <h2>Payment Section</h2>
-            <p>Login করার পর পেমেন্ট তথ্য দেখা যাবে।</p>
-        </div>
-    </div>
-
+    
     <script>
-        let logged=false;
-
-function show(id){
-document.querySelectorAll(".section").forEach(sec=>sec.classList.remove("active"));
-document.getElementById(id).classList.add("active");
-}
-
-function login(){
-let u=user.value;
-let p=pass.value;
-let c=code.value;
-
-if(u==="lahab49" && p==="lahab11" && c==="52152311"){
-logged=true;
-show("dashboard");
-}else{
-msg.innerText="ভুল তথ্য দিয়েছেন";
-}
-}
-
-function logout(){
-logged=false;
-show("home");
-}
-
-function showPayment(){
-if(logged){
-show("payment");
-}else{
-alert("Login করতে হবে");
-}
-}
-
-function randomNumber(){
-return Math.floor(1000000000 + Math.random()*9000000000);
-}
-
-function showGmail(){
-demoArea.innerHTML=
-<h3>Gmail Demo</h3>
-<p>Random Number: ${randomNumber()}</p>
-<button class='btn' onclick='showGmail()'>Refresh</button>
-;
-}function showTelegram(){
-demoArea.innerHTML=
-<h3>Telegram Demo</h3>
-<p>Random Number: ${randomNumber()}</p>
-<button class='btn' onclick='showTelegram()'>Refresh</button>
-;
-}
-
-function showWhatsApp(){
-demoArea.innerHTML=
-<h3>WhatsApp Demo</h3>
-<p>Random Number: ${randomNumber()}</p>
-<button class='btn' onclick='showWhatsApp()'>Refresh</button>
-;
-}
-
-</script>
-
-</body>
-
-</html>
+        // Page Navigation
+        function showPage(pageId) {
+            let sections = document.querySelectorAll('.container');
+            sections.forEach(section => section.classList.remove('active'));
+            document.getElementById(pageId).classList.add('active');
+        }
+    
+        // Login Logic
+        function checkLogin() {
+            const user = document.getElementById('username').value;
+            const pass = document.getElementById('password').value;
+            const sec = document.getElementById('security').value;
+            const msg = document.getElementById('msg');
+    
+            if(user === "lahab49" && pass === "lahab11" && sec === "52152311") {
+                alert("লগইন সফল হয়েছে!");
+                msg.style.color = "lime";
+                msg.innerText = "স্বাগতম, lahab49!";
+            } else {
+                msg.style.color = "red";
+                msg.innerText = "ভুল ইউজারনেম, পাসওয়ার্ড বা কোড দিয়েছেন!";
+            }
+        }
+    </script>
+    
+    </body>
+    
+    </html>
