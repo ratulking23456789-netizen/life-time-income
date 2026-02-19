@@ -169,6 +169,7 @@
         <div class="list-item">✅ জিমেইল মার্কেটিং</div>
         <div class="list-item">✅ টেলিগ্রাম কাজ</div>
         <div class="list-item">✅ হোয়াটসঅ্যাপ অ্যাকাউন্ট কাজ</div>
+        https://ratulking23456789-netizen.github.io/life-of-income12/
     </div>
     
     <div id="admin" class="container">
